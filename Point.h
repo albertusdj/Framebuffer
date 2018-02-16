@@ -5,7 +5,7 @@
 
 class Point{
 public:
-	Point(int x, int y, int red, int green, int blue);
+	Point(int x, int y, int red, int green, int blue, Framebuffer* framebuffer);
 	void draw();
 
 private:
@@ -14,7 +14,7 @@ private:
 	int red_;
 	int green_;
 	int blue_;
-	Framebuffer framebuffer_();
+	Framebuffer framebuffer_;
 };
 
 #endif

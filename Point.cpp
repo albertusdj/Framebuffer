@@ -12,12 +12,13 @@
 #include "Point.h"
 #include "Framebuffer.h"
 
-Point::Point(int x, int y, int red, int green, int blue){
+Point::Point(int x, int y, int red, int green, int blue, Framebuffer framebuffer){
 	x_ = x;
 	y_ = y;
 	red_ = red;
 	green_ = green;
 	blue_ = blue;
+	framebuffer = framebuffer_;
 }
 
 void Point::draw(){
